@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="stylesheet.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <section class="App">
+      <header>
+        <nav class="header">
+          <img src="/images/logo-black.png" alt="logo" class="header-logo" />
+          <button class="headr-menu-burgers" onclick="showmenu()"><i class="fas fa-bars"></i></button>
+          <ul class="header-menu" id="shoow">
+            <li class="header-menu-item">
+              <a class="headr-menu-item-link" href="#">News</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="headr-menu-item-link" href="#">GUIDES & ANALYTICS </a>
+            </li>
+            <li class="header-menu-item">
+              <a class="headr-menu-item-link" href="#">EVENTS </a>
+            </li>
+            <li class="header-menu-item">
+              <a class="headr-menu-item-link" href="#">EXPLAINED</a>
+            </li>
+            <li class="header-menu-item">
+              <a class="headr-menu-item-link" href="#"> ICON CLAENDER</a>
+            </li>
+          </ul>
+          <section class="sec"></section>
+        </nav>
+      </header>
+     
+    </section> 
+    <script>
+     
+     function showmenu(){
+      let list=document.getElementById("shoow");
+      if(list.className==="header-menu"){
+        list.className+="show"
+        console.log(1)
+      }
+      else {list.className="header-menu"
+       console.log(0)
+    }
+     }
+    </script>
+  </body>
+</html>
